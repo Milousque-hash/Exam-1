@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
-func CountChar(texte string, char rune) int {
-	total := 0
-	for _, c := range texte {
+func CountChar(str string, char rune) int {
+	d := 0
+	for _, c := range str {
 		if c == char {
-			total++
+			d++
 		}
 	}
-	return total
+	return d
 }
 
 func main() {

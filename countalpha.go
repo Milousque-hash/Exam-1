@@ -3,13 +3,13 @@ package main
 import "fmt"
 
 func CountAlpha(texte string) int {
-	total := 0
+	d := 0
 	for _, r := range texte {
 		if (r >= 'A' && r <= 'Z') || (r >= 'a' && r <= 'z') {
-			total++
+			d++
 		}
 	}
-	return total
+	return d
 }
 
 func main() {
